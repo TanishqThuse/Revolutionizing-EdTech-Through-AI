@@ -1,2 +1,7 @@
-# Revolutionizing-EdTech-Through-AI
-An AI-powered EdTech platform leveraging RAG, LLMs, CrewAI, and Streamlit to enhance personalized learning, automate assessments, and provide intelligent tutoring. It can generate quizzes from PDFs and assist with doubt-solving through AI-driven interactions🚀
+# 🚀 Revolutionizing EdTech and Learning with AI  
+
+> **"Study Smarter, Not Harder!"**  
+
+📚 An AI-powered platform leveraging RAG, LLMs, Gemini AI, and Streamlit that personalizes learning, adapts to student needs, and enhances education through intelligent tools like AI tutoring, adaptive quizzes, and automated content summarization.  
+
+---
