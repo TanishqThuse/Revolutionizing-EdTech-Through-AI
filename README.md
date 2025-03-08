@@ -40,7 +40,13 @@ Traditional education follows a **one-size-fits-all** approach, leading to ineff
 
 ✅ **Database**: Firebase 
 
+---
 
+## ╰┈➤ System Workflow Diagram  
+
+![Flowchart - Page 2 (1)](https://github.com/user-attachments/assets/60db40e1-152f-4192-8862-90dc45a637cf)
+
+---
 ## 🚀 Installation & Setup  
 
 
