@@ -21,3 +21,24 @@ def extract_keywords(text, num_keywords=5):
     doc = nlp(text)
     keywords = [token.text for token in doc if token.is_alpha and not token.is_stop]
     return list(set(keywords[:num_keywords]))
+
+def generate_summary(text, summary_length, summary_format, language):
+    """Generates an extractive summary using Google Gemini API."""
+    prompt = (f"Extract key sentences from the given text and summarize it in {summary_length} length. "
+              f"Format the summary as {summary_format}. Provide output in {language}.\n\n" + text)
+    try:
+        model = genai.GenerativeModel("gemini-1.5-flash")
+        
+        # Generate content using the model
+        response = model.generate_content(prompt)
+        
+        # Extract the text from the response
+        return response.text
+    except Exception as e:
+        return f"An error occurred: {e}"
+    
+def highlight_key_sentences(summary, keywords):
+    """Highlights key sentences in the summary containing important keywords."""
+    for keyword in keywords:
+        summary = summary.replace(keyword, f"**{keyword}**")
+    return summary
