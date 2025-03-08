@@ -31,7 +31,10 @@ Traditional education follows a **one-size-fits-all** approach, leading to ineff
 ## ⚙️ Tech Stack  
 
 ✅ **Machine Learning & AI**: Gemini AI, NLP 
+
 ✅ **Backend**: Python 
+
 ✅ **Frontend**: Streamlit UI
+
 ✅ **Database**: Firebase 
 
