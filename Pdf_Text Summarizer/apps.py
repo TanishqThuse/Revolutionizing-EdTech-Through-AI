@@ -71,3 +71,30 @@ summary_length = st.sidebar.selectbox("Select Summary Length", ["Short", "Medium
 
 # Language selection
 language = st.sidebar.selectbox("Select Language", ["English", "Hindi", "Tamil", "Telugu", "Bengali", "Marathi", "Gujarati"])
+
+if uploaded_file:
+    text = extract_text_from_pdf(uploaded_file)
+    st.subheader("Extracted Text")
+    st.text_area("Extracted Text", text, height=200)
+
+    # Keyword extraction
+    keywords = extract_keywords(text)
+    st.subheader("Extracted Keywords")
+    st.write(", ".join(keywords))
+
+    # Generate summary
+    if st.button("Generate Summary"):
+        # Add a loading state
+        with st.spinner("Generating summary..."):
+            summary = generate_summary(text, summary_length, summary_format, language)
+            highlighted_summary = highlight_key_sentences(summary, keywords)
+            
+            st.subheader("Generated Summary")
+            st.markdown(highlighted_summary)
+            
+            # Download options
+            file_format = st.radio("Download format", ["txt", "docx"])
+            file_path = save_summary(summary, file_format)
+            st.download_button(label="Download Summary", data=open(file_path, "rb"), file_name=file_path)
+
+st.write("\n\n *Built with Streamlit & Google Gemini API*")
