@@ -36,3 +36,9 @@ def generate_summary(text, summary_length, summary_format, language):
         return response.text
     except Exception as e:
         return f"An error occurred: {e}"
+    
+def highlight_key_sentences(summary, keywords):
+    """Highlights key sentences in the summary containing important keywords."""
+    for keyword in keywords:
+        summary = summary.replace(keyword, f"**{keyword}**")
+    return summary
