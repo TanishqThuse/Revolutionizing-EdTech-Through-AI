@@ -42,3 +42,16 @@ def highlight_key_sentences(summary, keywords):
     for keyword in keywords:
         summary = summary.replace(keyword, f"**{keyword}**")
     return summary
+
+def save_summary(summary, file_format):
+    """Saves the summary as a .txt or .docx file."""
+    if file_format == "txt":
+        with open("summary.txt", "w", encoding="utf-8") as file:
+            file.write(summary)
+        return "summary.txt"
+    elif file_format == "docx":
+        doc = Document()
+        doc.add_paragraph(summary)
+        file_path = "summary.docx"
+        doc.save(file_path)
+        return file_path
