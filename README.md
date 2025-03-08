@@ -19,6 +19,9 @@ Traditional education follows a **one-size-fits-all** approach, leading to ineff
 ### 🎓 **AI Personalized Learning Tutor**  
 🤖 Get customized **study recommendations** based on learning style, subject matter, and performance.  
 
+### 🎓 **AI Personalized Roadmap Generator**  
+🤖 Get customized **roadmap** based on year of study, learning style, subject matter, and performance.  
+
 ### 📝 **AI Adaptive Quiz Generator**  
 🎯 Automatically generates **quizzes** tailored to your study materials and adjusts difficulty based on performance.  
 
