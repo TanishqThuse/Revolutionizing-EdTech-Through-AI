@@ -225,6 +225,169 @@
 </head>
 <body>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Study<span>Smart</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-primary" href="#">Log In</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary" href="#">Sign Up Free</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero pt-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Revolutionize Your Learning With AI-Powered Tools</h1>
+                    <p class="lead mb-4">Our intelligent platform adapts to your learning style, summarizes content, and helps you master any subject faster than ever before.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#features" class="btn btn-primary btn-lg">Explore Features</a>
+                        <a href="#" class="btn btn-outline-dark btn-lg">Start Learning</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="Students using AI learning platform" class="img-fluid rounded-4 shadow feature-animation">
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <!-- Stats Counter -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6">
+                    <div class="counter-box">
+                        <div class="counter-number" data-count="50000">0</div>
+                        <div class="counter-text">Active Students</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter-box">
+                        <div class="counter-number" data-count="2000">0</div>
+                        <div class="counter-text">Hours Saved Weekly</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter-box">
+                        <div class="counter-number" data-count="95">0</div>
+                        <div class="counter-text">Satisfaction Rate</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="counter-box">
+                        <div class="counter-number" data-count="100000">0</div>
+                        <div class="counter-text">PDFs Summarized</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="fw-bold">Key Features of Our Platform</h2>
+                    <p class="text-muted">A smarter way to study, ensuring efficiency and better retention of knowledge!</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100">
+                        <span class="feature-tag">Most Popular</span>
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mx-auto">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4 class="mb-3">AI Personalized Learning Tutor</h4>
+                            <p class="text-muted">Uses machine learning to analyze study habits and provide tailored study recommendations.</p>
+                            <a href="https://aitutor-anvg7mgqxwlz2gikt2xlbn.streamlit.app/" class="btn btn-primary mt-3">Try It Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mx-auto">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <h4 class="mb-3">AI Adaptive Quiz Generator</h4>
+                            <p class="text-muted">Creates quizzes dynamically from study materials, adjusting difficulty based on your understanding.</p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#featureModal2">Try It Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mx-auto">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <h4 class="mb-3">AI PDF Document Summarizer</h4>
+                            <p class="text-muted">Extracts the most critical points from long PDFs to help you save time and focus on key concepts.</p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#featureModal3">Try It Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mx-auto">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4 class="mb-3">AI Video Summarizer</h4>
+                            <p class="text-muted">Generates concise summaries of educational videos, helping you grasp key points without watching full-length videos.</p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#featureModal4">Try It Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mx-auto">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <h4 class="mb-3">YouTube Transcript AI Summarizer</h4>
+                            <p class="text-muted">Extract key information from YouTube videos for better understanding in an easy, digestible format.</p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#featureModal5">Try It Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
