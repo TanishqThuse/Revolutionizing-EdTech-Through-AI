@@ -38,7 +38,8 @@ EduMentor leverages the cutting-edge RAG (Retrieval-Augmented Generation) functi
 st.markdown(rag_description)
 
 # Gemini API Key Input
-api_key = st.text_input(label='Enter your Google AI API Key', type='password')
+# api_key = st.text_input(label='Enter your Google AI API Key', type='password')
+api_key = "AIzaSyCxmvYM14Df6Mmi0HMHBAd_mZVpU2W3-dg"
 
 if api_key:
     # If API key is entered, initialize the Gemini API and proceed with app functionality
