@@ -55,3 +55,19 @@ def save_summary(summary, file_format):
         file_path = "summary.docx"
         doc.save(file_path)
         return file_path
+    
+# Streamlit UI
+st.title("PDF Summarizer with Google Gemini API")
+st.sidebar.header("Settings")
+
+# File uploader
+uploaded_file = st.file_uploader("Upload a PDF", type=["pdf"])
+
+# Summary format selection
+summary_format = st.sidebar.radio("Select Summary Format", ["Plain Text", "Bullet Points", "Structured Sections"])
+
+# Summary length selection
+summary_length = st.sidebar.selectbox("Select Summary Length", ["Short", "Medium", "Long"])
+
+# Language selection
+language = st.sidebar.selectbox("Select Language", ["English", "Hindi", "Tamil", "Telugu", "Bengali", "Marathi", "Gujarati"])
