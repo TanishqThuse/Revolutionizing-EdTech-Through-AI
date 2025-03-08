@@ -38,3 +38,22 @@ Traditional education follows a **one-size-fits-all** approach, leading to ineff
 
 ✅ **Database**: Firebase 
 
+
+## 🚀 Installation & Setup  
+
+```bash
+# Clone the repository
+git clone https://github.com/your-repo/Revolutionizing-EdTech-Through-AI.git
+
+# Navigate into the project directory
+cd Revolutionizing-EdTech-Through-AI
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the backend server
+python app.py
+
+
+
+
