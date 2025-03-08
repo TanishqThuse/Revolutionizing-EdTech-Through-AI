@@ -10,6 +10,8 @@
 
 Traditional education follows a **one-size-fits-all** approach, leading to inefficiency, stress, and information overload. Our AI-powered platform **tailors learning to each student**, helping them study **more efficiently, reduce stress, and improve retention**—empowering them with **accessible and engaging education**.  
 
+![image](https://github.com/user-attachments/assets/de3c6cc8-cf3b-4245-ac1a-e2300b154719)
+
 ---
 
 ## 🌟 Key Features  
