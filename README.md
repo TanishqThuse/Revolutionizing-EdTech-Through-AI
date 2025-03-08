@@ -27,3 +27,11 @@ Traditional education follows a **one-size-fits-all** approach, leading to ineff
 📹 Upload educational videos and receive **AI-generated summaries** of important moments.  
 
 ---
+
+## ⚙️ Tech Stack  
+
+✅ **Machine Learning & AI**: Gemini AI, NLP 
+✅ **Backend**: Python 
+✅ **Frontend**: Streamlit UI
+✅ **Database**: Firebase 
+
