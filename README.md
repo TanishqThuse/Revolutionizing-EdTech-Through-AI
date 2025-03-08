@@ -55,5 +55,12 @@ pip install -r requirements.txt
 python app.py
 
 
+## 🤝 Contributing
+We welcome contributions! 🙌
+
+- Fork the repository 🍴
+- Create a new branch 🚀
+- Make your changes and commit them ✅
+- Open a Pull Request 🔥
 
 
