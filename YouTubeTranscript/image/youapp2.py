@@ -74,6 +74,34 @@ def extract_transcript(video_id, language):
         st.markdown(f'<h5 style="text-position:center;color:orange;">{e}</h5>', unsafe_allow_html=True)
 
 
+
+def generate_summary(transcript_text, language="en"):
+    try:
+        # Configures the genai Library
+        genai.configure(api_key="AIzaSyA7g5j4wM0M-_wiH0Eiz7SGeU4o33AiMJc")
+
+        # Initializes a Gemini-Pro Generative Model
+        model = genai.GenerativeModel(model_name='gemini-2.0-flash-exp')
+
+        # Define a Prompt for AI Model
+        if language == 'hi':  # If the selected language is Hindi, modify the prompt
+            prompt = """आप एक YouTube वीडियो सारांशकार हैं। आप ट्रांसक्रिप्ट टेक्स्ट को लेकर वीडियो का संक्षेपण करेंगे, 
+                        जिसमें महत्वपूर्ण बिंदुओं को उचित उप-शीर्षकों के साथ संक्षिप्त रूप में (500 शब्दों के भीतर) प्रदान करें। 
+                        कृपया नीचे दिए गए टेक्स्ट का सारांश प्रदान करें: """
+        else:
+            prompt = """You are a YouTube video summarizer. You will be taking the transcript text and summarizing the entire video, 
+                        providing the important points with proper sub-headings in a concise manner (within 500 words). 
+                        Please provide the summary of the text given here: """
+        
+        response = model.generate_content(prompt + transcript_text)
+
+        return response.text
+
+    except Exception as e:
+        add_vertical_space(5)
+        st.markdown(f'<h5 style="text-position:center;color:orange;">{e}</h5>', unsafe_allow_html=True)
+
+
  
 def main():
 
