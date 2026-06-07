@@ -39,7 +39,7 @@ st.markdown(rag_description)
 
 # Gemini API Key Input
 # api_key = st.text_input(label='Enter your Google AI API Key', type='password')
-api_key = "AIzaSyCxmvYM14Df6Mmi0HMHBAd_mZVpU2W3-dg"
+api_key = ""
 
 if api_key:
     # If API key is entered, initialize the Gemini API and proceed with app functionality
